@@ -13,7 +13,7 @@ class RockPaperScissorsGame:
         self.create_widgets()
 
     def create_widgets(self):
-        # User's choice buttons
+       
         self.rock_button = tk.Button(self.root, text="Rock", command=lambda: self.play("rock"))
         self.rock_button.grid(row=1, column=0, padx=10, pady=10)
         
@@ -33,7 +33,7 @@ class RockPaperScissorsGame:
         self.result_label = tk.Label(self.root, text="", font=("Helvetica", 14))
         self.result_label.grid(row=4, column=0, columnspan=3, pady=10)
         
-        # Score labels
+       
         self.user_score_label = tk.Label(self.root, text=f"Your Score: {self.user_score}")
         self.user_score_label.grid(row=5, column=0, pady=10)
         
